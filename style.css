@@ -1,0 +1,385 @@
+/* include fonts css */
+@import url(fonts/fonts.css);
+
+/* general css */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+ 	font-family: 'Gotham-Book', sans-serif;
+ 	color: #313131;
+}
+h1,h2,h3,h4,h5,h6,b,strong {
+	font-weight: normal;
+	font-family: 'Gotham-Bold', sans-serif;
+	margin: 0;
+}
+a {
+	transition: 0.3s;
+}
+a:focus, a:hover {
+	text-decoration: none;
+	outline: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+button:focus {
+    outline: none;
+}
+
+.main-wrapper {
+    position: relative;
+}
+.header-area {
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+.header-area .row {
+    align-items: center;
+}
+.site-logo {
+    width: 120px;
+}
+.login-btn {
+    text-align: right;
+}
+.login-btn a {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-family: 'Gotham-Bold', sans-serif;
+}
+.login-btn a:hover {
+    color: #ce4949;
+    background: #fff000;
+}
+
+.banner-area {
+    padding-top: 135px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.banner-area:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0,0,0.7);
+    z-index: -1;
+    /* background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,0.8) 0%, rgba(206,73,73,0.8) 70%);  */
+}
+.banner-text {
+    padding-top: 60px;
+    text-align: center;
+}
+.banner-text h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+.banner-text p {
+    font-size: 18px;
+    color: #fff;
+}
+.banner-text .download-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+.download-btn a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold', sans-serif;
+    letter-spacing: 1px;
+    background: #ce4949;
+}
+.download-btn a i {
+    margin-right: 10px;
+}
+.download-btn a:hover {
+    color: #ce4949;
+    background: #fff000;
+}
+
+.winner-wrapper {
+    padding: 60px 0 0 0;
+}
+.winner-wrapper h2 {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 32px;
+}
+.winner-tabs ul li a {
+    display: inline-block;
+    margin-right: 39px;
+    padding: 15px 0;
+    color: #111111;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    font-family: 'Gotham-Bold', sans-serif;
+}
+.winner-tabs ul li a.active {
+    color: #ce4949;
+    border-color: #ce4949;
+}
+
+.winner-tab-content {
+    padding: 20px 0 40px;
+    background: #efeff4;
+}
+.winner-tab-content .download-btn {
+    margin-top: 0;
+    text-align: center;
+}
+.winner-tabs ul {
+    justify-content: center;
+}
+.winner-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.winner-img {
+    flex: 0 0 100px;
+    max-width: 100px;
+}
+.winner-info {
+    flex: 0 0 68%;
+    max-width: 68%;
+    padding-left: 15px;
+}
+.winner-info h4 {
+    font-size: 20px;
+}
+.winner-info h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Gotham-Book', sans-serif;
+}
+.winner-info .points {
+    color: #ce4949;
+    display: block;
+}
+.winner-info .prize {
+    color: #fff;
+    display: inline-block;
+    background: #ce4949;
+    font-size: 14px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.how-play-wrapper {
+    padding: 60px 0;
+}
+.how-play-wrapper h2 {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 32px;
+}
+.how-play-text ul {
+    counter-reset: section;
+    margin-bottom: 16px;
+}
+.how-play-text ul li {
+    position: relative;
+    padding: 0 0 20px 48px
+}
+.how-play-text ul li:before {
+    content: counter(section);
+    counter-increment: section;
+    font-family: 'Gotham-Bold', sans-serif;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 40px;
+    color: #ccc;
+}
+.how-play-text ul li span {
+    display: block;
+    font-family: 'Gotham-Bold', sans-serif;
+}
+
+.faq-wrapper {
+    padding: 60px 0;
+    background: #efeff4;
+}
+.faq-wrapper h2 {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 32px;
+}
+.faq-wrapper .card {
+    margin-bottom: 15px;
+}
+.faq-wrapper .card-header {
+    padding: 0;
+}
+.faq-wrapper .card-header a {
+    padding: 12px 15px;
+    display: block;
+    color: #111;
+    font-family: 'Gotham-Bold', sans-serif;
+}
+.faq-wrapper .card-header a:after {
+    content: '\f106';
+    font-family: 'Fontawesome';
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 24px;
+}
+.faq-wrapper .card-header a.collapsed:after {
+    content: '\f107';
+}
+
+.testimonial-wrapper {
+    padding: 60px 0;
+}
+.testimonial-wrapper h2 {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 32px;
+}
+.testimonial-item {
+    border: 1px solid #ccc;
+}
+.testimonial-head {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+}
+.testimonial-img {
+    flex: 0 0 150px;
+}
+.testimonial-info {
+    flex: 0 0 56%;
+    padding: 12px;
+}
+.testimonial-info h4 {
+    font-size: 20px;
+}
+.testimonial-info h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Gotham-Book', sans-serif;
+}
+.testimonial-info .points {
+    color: #ce4949;
+    display: block;
+}
+.testimonial-info .prize {
+    color: #fff;
+    display: inline-block;
+    background: #ce4949;
+    font-size: 14px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.testimonial-content {
+    padding: 20px;
+}
+.owl-carousel .owl-nav button {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px !important;
+    position: absolute;
+    top: 40%;
+    background: rgba(0,0,0,0.5) !important;
+    color: #fff !important;
+    line-height: 40px !important;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+.owl-carousel .owl-nav button.owl-prev.disabled {
+    display: none;
+}
+.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+.owl-carousel .owl-nav button.owl-next.disabled {
+    display: none;
+}
+
+.footer-top {
+    background: #373737;
+    color: #fff;
+    padding: 60px 0 40px;
+}
+.footer-logo {
+    margin-bottom: 32px;
+    width: 150px;
+}
+.footer-social ul li {
+    padding-right: 10px;
+    display: inline-block;
+}
+.footer-social ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #111111;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+}
+.footer-social ul li a i {
+    line-height: 40px;
+}
+.footer-social ul li a:hover {
+    color: #fff;
+    background: #ce4949;
+}
+.footer-menu ul li {
+    display: block;
+    padding-bottom: 15px;
+}
+.footer-menu ul li a {
+    display: inline-block;
+    color: #fff;
+}
+.footer-menu ul li a:hover {
+    color: #ce4949;
+}
+.mobile-download-btn {
+    display: none;
+}
